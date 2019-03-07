@@ -10,22 +10,20 @@ header{
    
 }
  .profile{
-    padding-left: 1000px;
-    
+    padding-left: 1220px;
  }
 
 .picture{
     width: 120px;
-    height: auto;
     border: 1px solid black;
     margin-top: 3px;
+    
 }
 
 #lotpic{
-    
     display: inline-block;
-    position: absolute; 
-    left: 1650px; 
+    position: fixed; 
+    left: 1750px; 
     top: 1px;
 }
 
