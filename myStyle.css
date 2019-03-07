@@ -1,14 +1,89 @@
 body{
-    background: rgba(109, 81, 122, 0.466);
+    background: rgba(94, 153, 140, 0.466);
 }
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top:0;
+    background-color: rgba(74, 160, 124, 0.596);
+   
+}
+ .profile{
+    padding-left: 1000px;
+    
+ }
+
+.picture{
+    width: 120px;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 3px;
+}
+
+#lotpic{
+    
+    display: inline-block;
+    position: absolute; 
+    left: 1650px; 
+    top: 1px;
+}
+
+nav li{
+    font-family: 'trebuchet MS';
+    font-weight: 100;
+    font-size: 20px;
+    width: 200px;
+    display: inline-block;
+}
+
 h1{
     text-align: center;
     font-size: 50px;
-    color: rgba(6, 0, 8, 0.692);
+    color: rgba(52, 21, 153, 0.753);
+    font-family: 'trebuchet MS';
 }
+
 h2{
+    text-align: left;
     font-size: 30px;
 }
-p{
-    font-size: 19px;
+
+#career {
+    padding-top: 150px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
 }
+
+p {
+font-size: 18px;
+  font-weight: 10;
+}
+
+#education{
+    font-size: 18px;
+    font-weight: 10;
+}
+
+#technical{
+    font-size: 18px;
+    font-weight: 10;
+    padding-bottom: 190px;
+}
+
+footer{
+    background-color: rgb(70, 87, 110);
+    display: flex;
+    color: white;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.copyright{
+    width: 100%;
+    font-size: 10px;
+ }
