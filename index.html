@@ -1,72 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" type = "text/css" href="myStyle.css" />
-    <title>Denny Wijaya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WELCOME TO FOX</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-    
-    
-    <header>
 
-    <div class="profile"> 
-        <h1>Denny Wijaya</h1>
-        <img class="picture" src="https://i.imgur.com/msBdD4Z.jpg">
+<body>
+
+  <div>
+    <div id="decoration">
+      <h1 class="casinoName">
+        <span style="color:black">&spades;</span>
+        <span style="color:red">&hearts;</span>
+        <span style="color:black"> &clubs;</span>
+        <span style="color:red"> &diams;</span>
+        <span style="color:yellow"> Casino Daring FOX </span>
+        <span style="color:black">&spades;</span>
+        <span style="color:red">&hearts;</span>
+        <span style="color:black"> &clubs;</span>
+        <span style="color:red"> &diams;</span>
+      </h1>
     </div>
 
-
-    <nav>
-            <ul>
-                <li><a href="https://dennydenny96.github.io/">My Profile</a></li>
-                <li><a href=".html">Instagram</a></li>
-                <li><a href=".html">YouTube</a></li>
-                <li><a href=".html">Facebook</a></li>
-            </ul>
-        </nav> 
-</header>
-
-
-
-
-    <div id="career">
-<h2><strong><u>Career Objectives</u></strong></h2>
-
-<p>Program with enthusiasm on hard working to achieve goals and gain experience. Openminded and willing to learn new skills that required in achieving the goals. Active on social,
-    sport and society. Self-motivated and good time management in completing assignment. An
-    Individual who interested in project management and team work</p>
-    </div>    
-
-    <div id="education">
-            <h2><strong><u>Education</u></strong></h2>
-            <ul>
-                <li>BSC (Hons) in Information Technology with Specialism in Forensic Computing (2015-2018)</li>
-                <li>Sekolah Menengah Atas Xaverius 3, Palembang, Indonesia (2011-2014)</li>
-                <li>Sekolah Menengah Pertama Xaverius 1, Palembang, Indonesia (2008-2011</li>    
-            </ul>
-                </div>  
-
-    <div id="technical">
-            <h2><strong><u>Technical Skills</u></strong></h2>
-            <ul>
-                <li>C/C++/C# </li>
-                <li>Database Management with SQL</li>
-                <li>Cyber Security (Basic)</li>
-                <li>Assembly Code</li>
-                <li>Networking skills</li>
-                <li>Troubleshooting Software/Hardware</li>
-                <li>Outlook, Thunderbird, Mobile device (iOS, Android)</li>
-                <li>HTML & CSS</li>
-            </ul>
-            
-                </div>    
-
-<footer>
-        <div class="copyright"> 
-    <p>Copyright @Dennywijaya March 2019</p>
+    <div class="horizontal-line">
     </div>
-</footer>
 
+    <div class="flex-container" id="cardRow">
+      <div class="horizontal-card" id="bankerThird">
+        <span class="suit"></span>
+        <span class="image"></span>
+      </div>
+      <div class="vertical-card" id="bankerSecond">
+        <span class="suit"></span>
+        <span class="image"></span>
+      </div>
+      <div class="vertical-card" id="bankerFirst">
+        <span class="suit"></span>
+        <span class="image"></span>
+      </div>
+      <div class="verical-line">
+      </div>
+      <div class="vertical-card" id="playerSecond">
+        <span class="suit"></span>
+        <span class="image"></span>
+      </div>
+      <div class="vertical-card" id="playerFirst">
+        <span class="suit"></span>
+        <span class="image"></span>
+      </div>
+      <div class="horizontal-card" id="playerThird">
+        <span class="suit"></span>
+        <span class="image"></span>
+      </div>
+    </div>
 
+    <div class="flex-container">
+      <div>
+        <h1>
+          <span style="color:red">Banker</span>
+        </h1>
+      </div>
+      <div>
+        <h1>
+          <span style="color:lightblue">Player</span>
+        </h1>
+      </div>
+    </div>
 
+    <div class="horizontal-line">
+    </div>
+    <br />
+
+    <div id="bonusBox" class="flex-container">
+      <form>
+        <span style="color:yellow">Tie</span>
+        <input type="number" id="tieBet" min="0" max="700" step="5" value="0">
+
+      </form>
+    </div>
+
+    <div class="horizontal-line">
+    </div>
+    <br />
+
+    <div id="betBox" class="flex-container">
+      <div id="banker">
+        <h1>
+          <span style="color:red">Banker</span>
+          <input type="number" id="bankerBet" min="0" max="14000" step="25" value="0">
+        </h1>
+      </div>
+
+      <div class="verical-line2">
+      </div>
+      <div>
+        <h1>
+          <span style="color:lightblue">Player</span>
+          <input type="number" id="playerBet" min="0" max="14000" step="25" value="0">
+        </h1>
+      </div>
+    </div>
+
+    <div class="horizontal-line">
+    </div>
+    <br />
+
+    <div style="text-align:center">
+      <span style="color:yellow">My Balance: </span>
+      <span style="color:yellow" id="myChipTotal"></span>
+    </div>
+
+    <div class="horizontal-line">
+    </div>
+    <br />
+
+    <div id="theControls">
+      <button id="shuffleButton">
+        Shuffle the deck
+      </button>
+      <button id="dealButton" disabled>
+        Deal a Hand
+      </button>
+    </div>
+
+  </div>
+
+  <script src=main.js>
+  </script>
 </body>
+
 </html>
